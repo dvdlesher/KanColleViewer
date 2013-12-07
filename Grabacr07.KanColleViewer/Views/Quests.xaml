@@ -19,8 +19,8 @@
 			<TextBlock Text="(｡ŏ﹏ŏ) "
 			           FontSize="56"
 			           VerticalAlignment="Center" />
-			<TextBlock Text="未実装です"
-			           FontSize="72"
+			<TextBlock Text="not implemented yet"
+			           FontSize="46"
 			           VerticalAlignment="Center" />
 		</StackPanel>
 	</Grid>

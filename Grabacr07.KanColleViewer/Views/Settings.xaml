@@ -19,7 +19,7 @@
 	<StackPanel Margin="10,0">
 		<StackPanel>
 			<TextBlock>
-				<Run Text="ブラウザー操作"
+				<Run Text="Browser Settings"
 					 Style="{DynamicResource PickupTextElementStyleKey}" />
 			</TextBlock>
 
@@ -33,7 +33,7 @@
 		
 		<StackPanel Margin="0,12">
 			<TextBlock>
-				<Run Text="スクリーンショット設定"
+				<Run Text="Screenshot Settings"
 					 Style="{DynamicResource PickupTextElementStyleKey}" />
 			</TextBlock>
 			<Grid Margin="10,6,10,0">
@@ -46,13 +46,13 @@
 					<ColumnDefinition Width="*" />
 					<ColumnDefinition Width="Auto" />
 				</Grid.ColumnDefinitions>
-				<TextBlock Text="保存先フォルダー  "
+				<TextBlock Text="Destination folder: "
 						   VerticalAlignment="Center"
 						   Margin="0,6" />
 				<controls:PromptTextBox Grid.Row="0"
 										Grid.Column="1"
 										Text="{Binding ScreenshotFolder}"
-										Prompt="保存先フォルダー パス"
+										Prompt="Destination folder path"
 										Padding="2" />
 				<!--<TextBlock Grid.Row="1"
 					   Text="ファイル名: "

@@ -52,7 +52,7 @@
 		<common:PromptTextBox Grid.Column="2"
 							  x:Name="UrlBox"
 							  Text="{Binding SourceString, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-							  Prompt="URL を入力し、Enter キーで移動します。"
+							  Prompt="URL goes here."
 							  VerticalAlignment="Center"
 							  VerticalContentAlignment="Center"
 							  Padding="2,2">
