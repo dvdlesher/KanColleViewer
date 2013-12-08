@@ -64,7 +64,7 @@
 									   Grid.Column="1"
 									   VerticalAlignment="Center"
 									   Margin="10,0">
-								<Run Text="建造中の艦"
+								<Run Text="Under construction"
 									 FontSize="14" />
 								<LineBreak />
 								<Run Text="{Binding Ship, Mode=OneWay}"
@@ -75,7 +75,7 @@
 									   Grid.Column="2"
 									   VerticalAlignment="Center"
 									   Margin="10,0">
-								<Run Text="完成時刻"
+								<Run Text="Time of completion"
 									 FontSize="14" />
 								<LineBreak />
 								<Run Text="{Binding CompleteTime, Mode=OneWay}"
@@ -86,7 +86,7 @@
 									   Grid.Column="3"
 									   VerticalAlignment="Center"
 									   Margin="10,0">
-								<Run Text="建造完了まで"
+								<Run Text="ETA"
 									 FontSize="14" />
 								<LineBreak />
 								<Run Text="{Binding Remaining, Mode=OneWay}"
@@ -101,7 +101,7 @@
 									   VerticalAlignment="Center"
 									   Margin="30,0"
 									   Visibility="Collapsed">
-								<Run Text="未使用"
+								<Run Text="Idle"
 									 FontSize="18" />
 							</TextBlock>
 							<TextBlock x:Name="LockedMessage"
@@ -111,7 +111,7 @@
 									   VerticalAlignment="Center"
 									   Margin="30,0"
 									   Visibility="Collapsed">
-								<Run Text="ロックされています"
+								<Run Text="Locked"
 									 FontSize="18" />
 							</TextBlock>
 							<TextBlock x:Name="CompletedMessage"
@@ -121,7 +121,7 @@
 									   VerticalAlignment="Center"
 									   Margin="30,0"
 									   Visibility="Collapsed">
-								<Run Text="完成！"
+								<Run Text="Completed!"
 									 FontSize="18"
 									 Style="{DynamicResource PickupTextElementStyleKey}" />
 							</TextBlock>
@@ -194,12 +194,12 @@
 					VerticalAlignment="Bottom">
 			<StackPanel Margin="10">
 				<TextBlock Margin="5">
-					<Run Text="表示設定"
+					<Run Text="Display settings"
 						 Style="{DynamicResource PickupTextElementStyleKey}" />
 				</TextBlock>
 				<CheckBox Margin="8,5"
 						  IsChecked="{Binding CanDisplayShipName, Mode=TwoWay}">
-					<TextBlock Text="建造中の艦名をネタバレする" />
+					<TextBlock Text="Spoil me!" />
 				</CheckBox>
 			</StackPanel>
 
@@ -217,25 +217,25 @@
 					</Style>
 				</StackPanel.Style>
 				<TextBlock Margin="5">
-					<Run Text="通知設定"
+					<Run Text="Notification option"
 						 Style="{DynamicResource PickupTextElementStyleKey}" />
-					<Run Text="(Windows 8 以降)" />
+					<Run Text="(Windows 8.x)" />
 				</TextBlock>
 				<RadioButton Margin="8,5"
 							 IsChecked="{Binding IsNotifyCompleted}">
-					<TextBlock Text="建造完了時にトースト通知を表示する" />
+					<TextBlock Text="Notify me" />
 				</RadioButton>
 				<RadioButton Margin="8,5"
 							 IsEnabled="False">
 					<TextBlock>
-						<Run Text="ドックごとに個別に設定する"
+						<Run Text="Set individually"
 							 TextDecorations="Strikethrough" />
-						<Run Text="(未実装)" />
+						<Run Text="(unimplemented)" />
 					</TextBlock>
 				</RadioButton>
 				<RadioButton Margin="8,5"
 							 IsChecked="True">
-					<TextBlock Text="通知しない" />
+					<TextBlock Text="Do not notify me" />
 				</RadioButton>
 			</StackPanel>
 		</StackPanel>

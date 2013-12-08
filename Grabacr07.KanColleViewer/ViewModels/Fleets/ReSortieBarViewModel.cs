@@ -128,7 +128,7 @@ namespace Grabacr07.KanColleViewer.ViewModels.Fleets
 		{
 			if (this.source.CanReSortie)
 			{
-				this.Message = "Ready to sortie！";
+				this.Message = "Ready to sortie!";
 				this.CanReSortie = true;
 				return;
 			}
@@ -154,7 +154,7 @@ namespace Grabacr07.KanColleViewer.ViewModels.Fleets
 
 		private void UpdateRemaining()
 		{
-			this.Remaining = this.source.Remaining.HasValue ? "Fleet will be ready in: " + this.source.Remaining.Value.ToString(@"mm\:ss") : "";
+			this.Remaining = this.source.Remaining.HasValue ? "Morale will be fully restored in: " + this.source.Remaining.Value.ToString(@"mm\:ss") : "";
 		}
 	}
 }

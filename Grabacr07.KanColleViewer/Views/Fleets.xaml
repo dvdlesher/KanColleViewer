@@ -78,10 +78,10 @@
 					<Border Padding="10,5"
 					        Background="#FF204080">
 						<TextBlock Foreground="{DynamicResource ActiveForegroundBrushKey}">
-							<Run Text="この艦隊は遠征中です。" />
-							<Run Text=" 完了時刻:" />
+							<Run Text="This fleet is on an expedition." />
+							<Run Text=" Time of completion:" />
 							<Run Text="{Binding ReturnTime, Mode=OneWay}" />
-							<Run Text=" 帰投まで:" />
+							<Run Text=" ETA:" />
 							<Run Text="{Binding Remaining, Mode=OneWay}" />
 						</TextBlock>
 					</Border>

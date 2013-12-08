@@ -33,7 +33,7 @@ namespace Grabacr07.KanColleViewer.ViewModels.Fleets
 				return "艦隊に入渠中の艦娘がいます。";
 			}
 			var remaining = dock.CompleteTime.Value - DateTimeOffset.Now - TimeSpan.FromMinutes(1.0);
-			return string.Format(@"艦隊に入渠中の艦娘がいます。 完了時刻: {0:MM/dd HH\:mm} 完了まで: {1}:{2:mm\:ss}",
+			return string.Format(@"There are ships currently being repaired. Time of completion: {0:MM/dd HH\:mm} ETA: {1}:{2:mm\:ss}",
 				dock.CompleteTime.Value, (int) remaining.TotalHours, remaining);
 		}
 	}
