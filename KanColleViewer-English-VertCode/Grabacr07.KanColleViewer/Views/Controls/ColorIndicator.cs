@@ -55,7 +55,25 @@ namespace Grabacr07.KanColleViewer.Views.Controls
 			this.Value = value.Current;
 
 			var percentage = value.Current / (double)value.Maximum;
-            var color = percentage > 0.5
+            var color = new Color();
+            /*if (percentage > 0.75)
+            {
+                color = Color.FromRgb(0, 128, 64);
+            }
+            else if (percentage > 0.5)
+            {
+                color = Color.FromRgb(255, 128, 0);
+            }
+            else if (percentage > 0.25)
+            {
+                color = Color.FromRgb(128, 64, 0);
+            }
+            else 
+            {
+                color = Color.FromRgb(64, 0, 0);
+            }*/
+
+            color = percentage > 0.5
 				? Color.FromRgb((byte)(255 - 255 * ((percentage - 0.5) * 2)), 255, 0)
 				: Color.FromRgb(255, (byte)(255 * (percentage * 2)), 0);
 

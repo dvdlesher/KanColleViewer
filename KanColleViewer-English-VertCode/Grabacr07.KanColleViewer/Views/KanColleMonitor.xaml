@@ -39,12 +39,12 @@
 			<StackPanel Orientation="Horizontal"
 						DataContext="{Binding Homeport.Admiral}">
 				<TextBlock>
-					<Run Text="{Binding Model.Nickname, Mode=OneWay}"
-						 Style="{DynamicResource PickupTextElementStyleKey}"
-						 FontSize="18" />
 					<Run Text="{Binding Model.Rank, Mode=OneWay}"
 						 Style="{DynamicResource PickupTextElementStyleKey}"
-						 FontSize="14" />
+						 FontSize="16" />
+					<Run Text="{Binding Model.Nickname, Mode=OneWay}"
+						 Style="{DynamicResource PickupTextElementStyleKey}"
+						 FontSize="16" />
 					<LineBreak />
 					<Run Text="{Binding Model.Comment, Mode=OneWay}" />
 				</TextBlock>
@@ -92,11 +92,11 @@
 
 					<TextBlock Grid.Row="0"
 							   Grid.Column="1">
-						<Run Text="Quick repair materials:" />
+						<Run Text="Buckets:" />
 						<Run Text="{Binding Homeport.Materials.Model.InstantRepairMaterials, Mode=OneWay}"
 							 Style="{DynamicResource PickupTextElementStyleKey}" />
 						<LineBreak />
-						<Run Text="Quick construction materials:" />
+						<Run Text="Flamethrowers:" />
 						<Run Text="{Binding Homeport.Materials.Model.InstantBuildMaterials, Mode=OneWay}"
 							 Style="{DynamicResource PickupTextElementStyleKey}" />
 					</TextBlock>
@@ -120,7 +120,7 @@
 						<Run Text="/" />
 						<Run Text="{Binding Homeport.Admiral.Model.MaxShipCount, Mode=OneWay}" />
 						<LineBreak />
-						<Run Text="Equipment:" />
+						<Run Text="Equipments:" />
 						<Run Text="{Binding Homeport.SlotItems.Count, Mode=OneWay}"
 							 Style="{DynamicResource PickupTextElementStyleKey}" />
 						<Run Text="/" />

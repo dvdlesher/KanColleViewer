@@ -13,7 +13,7 @@ namespace Grabacr07.KanColleWrapper.Models
 			switch (rank)
 			{
                 case 1:
-                    return "Marshal admiral";//"元帥";
+                    return "Marshal Admiral";//"元帥";
                 case 2:
                     return "Admiral";//"大将";
                 case 3:
