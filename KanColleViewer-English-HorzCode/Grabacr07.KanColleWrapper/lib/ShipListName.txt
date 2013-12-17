@@ -52,7 +52,7 @@
 霧島改,Kirishima Kai
 鳳翔,Houshou
 鳳翔改,Houshou Kai
-扶桑改,Fusou
+扶桑,Fusou
 扶桑改,Fusou Kai
 山城,Yamashiro
 山城改,Yamashiro Kai
